@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Interactive Page!</h1>
+    </header>
+
+    <main>
+        <section id="interactive-section-1">
+            <h2>Section 1: Dynamic Content</h2>
+            <button id="changeContentBtn">Change Text Below</button>
+            <p id="dynamicText">This text will change when you click the button.</p>
+        </section>
+
+        <section id="interactive-section-2">
+            <h2>Section 2: Image Carousel</h2>
+            <div class="carousel-container">
+                <button id="prevImage" class="carousel-btn">&lt;</button>
+                <img id="carouselImage" src="#" alt="Carousel Image 1">
+                <button id="nextImage" class="carousel-btn">&gt;</button>
+            </div>
+        </section>
+
+        <section id="contact-form-section">
+            <h2>Contact Us</h2>
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <span class="error-message" id="nameError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <span class="error-message" id="emailError"></span>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                    <span class="error-message" id="messageError"></span>
+                </div>
+                <button type="submit">Submit</button>
+                <p id="formSuccess" class="success-message"></p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Interactive Web Page</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
